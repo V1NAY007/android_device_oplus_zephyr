@@ -30,5 +30,6 @@ rw_dir_file(hal_oplus_touchdaemon, vendor_data_file)
 rw_dir_file(hal_oplus_touchdaemon, vendor_proc_display)
 rw_dir_file(hal_oplus_touchdaemon, vendor_proc_oplus_touch)
 
+set_prop(hal_oplus_touchdaemon, ctl_stop_prop)
 set_prop(hal_oplus_touchdaemon, system_oplus_touch_prop)
 set_prop(hal_oplus_touchdaemon, vendor_oplus_touch_prop)
