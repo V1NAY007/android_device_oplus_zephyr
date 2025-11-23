@@ -328,7 +328,7 @@ $(call soong_config_set,OPLUS_LINEAGE_TOUCH_HAL,INCLUDE_DIR,$(DEVICE_PATH)/touch
 $(call soong_config_set,OPLUS_LINEAGE_TOUCH_HAL,USE_OPLUSTOUCH,true)
 
 # USB
-$(call soong_config_set,android_hardware_mediatek_usb,audio_accessory_supported,true)
+$(call soong_config_set_bool,android_hardware_mediatek_usb,audio_accessory_supported,true)
 
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.mediatek \
