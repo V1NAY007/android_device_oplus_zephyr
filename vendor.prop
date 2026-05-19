@@ -278,6 +278,9 @@ vendor.connsys.driver.ready=no
 vendor.rild.libpath=mtk-ril.so
 vendor.rild.libargs=-d /dev/ttyC0
 
+# USB
+vendor.usb.controller=11201000.usb0
+
 # Sensors
 ro.vendor.mtk.sensor.support=yes
 
