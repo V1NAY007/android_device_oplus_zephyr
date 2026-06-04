@@ -268,7 +268,7 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # Properties
-include $(DEVICE_PATH)/vendor_logtag.mk
+include hardware/mediatek/configs/properties/vendor_logtag.mk
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
