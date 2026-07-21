@@ -13,5 +13,5 @@
     <item name="pixel_pitch" format="float" type="dimen">64.47</item>
     
     <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
-    <integer name="config_screenRecorderMaxFramerate">90</integer>
+    <integer name="config_screenRecorderMaxFramerate">120</integer>
 </resources>
