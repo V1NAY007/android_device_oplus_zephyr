@@ -375,3 +375,5 @@ PRODUCT_COPY_FILES += \
 # Inherit the proprietary files
 $(call inherit-product, vendor/oplus/zephyr/zephyr-vendor.mk)
 
+#MTK GED GPU
+$(call soong_config_set_bool,libgui,support_mtk_ged_kpi,true)
