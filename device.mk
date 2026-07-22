@@ -192,6 +192,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/init/init.recovery.mt6895.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.mt6895.rc
 
+# Axion Kernel Manager
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/kernel/ax_kernel_manager.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ax_kernel_manager.xml \
+    $(DEVICE_PATH)/init/ax_init_kernel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ax_init_kernel.rc
+
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/keylayout/,$(TARGET_COPY_OUT_VENDOR)/usr/keylayout)
