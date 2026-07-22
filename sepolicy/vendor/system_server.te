@@ -1,1 +1,9 @@
 rw_dir_file(system_server, vendor_proc_tri_state_key)
+
+#GPU Kernel Manager
+allow system_server vendor_sysfs_gpu:file rw_file_perms;
+allow system_server vendor_sysfs_gpu:dir r_dir_perms;
+allow system_server vendor_sysfs_gpu:lnk_file r_file_perms;
+allow system_server sysfs_ged:file r_file_perms;
+allow system_server sysfs_ged:dir r_dir_perms;
+
