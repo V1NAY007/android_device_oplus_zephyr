@@ -31,13 +31,6 @@ AXION_CAMERA_FRONT_INFO := 16
 AXION_MAINTAINER := V1NAY007
 # Processor name (underscores become spaces)
 AXION_PROCESSOR := Dimensity_8100
-# CPU governor support
-PERF_GOV_SUPPORTED := true
-PERF_DEFAULT_GOV := performance
-PERF_ANIM_OVERRIDE := true
-HBM_SUPPORTED := true
-HBM_NODE := /sys/class/backlight/panel0-backlight/hbm_mode
 TORCH_STR_SUPPORTED := true
 TARGET_INCLUDES_LOS_PREBUILTS := true
-TARGET_NEEDS_DOZE_FIX := true
-TARGET_SUPPORTED_REFRESH_RATES := 60,75,90,120
+PERF_ANIM_OVERRIDE := true
