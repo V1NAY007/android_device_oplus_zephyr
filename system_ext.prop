@@ -16,3 +16,8 @@ ro.media.recorder-max-base-layer-fps=60
 wifi.direct.interface=p2p0
 wifi.interface=wlan0
 wifi.tethering.interface=ap0
+
+# InfinityX Props
+ro.product.marketname=Realme GT Neo 3 5G
+ro.infinity.soc=Mediatek 8100
+ro.infinity.camera=50MP + 8MP + 2MP
