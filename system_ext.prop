@@ -16,3 +16,6 @@ ro.media.recorder-max-base-layer-fps=60
 wifi.direct.interface=p2p0
 wifi.interface=wlan0
 wifi.tethering.interface=ap0
+
+#lunaris maintainer
+ro.lunaris.maintainer=V1NAY007
