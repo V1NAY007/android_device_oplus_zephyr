@@ -26,7 +26,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 #Axion Stuff
 TARGET_ENABLE_BLUR := true
-TARGET_INCLUDE_AXFX := true
+TARGET_INCLUDE_VIPERFX := true
 # Camera information (multiple sensors supported)
 AXION_CAMERA_REAR_INFO := 50,8,2
 AXION_CAMERA_FRONT_INFO := 16
@@ -36,11 +36,9 @@ AXION_MAINTAINER := V1NAY007
 AXION_PROCESSOR := Dimensity_8100
 # CPU governor support
 PERF_GOV_SUPPORTED := true
-PERF_DEFAULT_GOV := performance
+PERF_DEFAULT_GOV := schedutil
 PERF_ANIM_OVERRIDE := true
-HBM_SUPPORTED := true
-HBM_NODE := /sys/class/backlight/panel0-backlight/hbm_mode
-TORCH_STR_SUPPORTED := true
 TARGET_INCLUDES_LOS_PREBUILTS := true
-TARGET_NEEDS_DOZE_FIX := true
-TARGET_SUPPORTED_REFRESH_RATES := 60,75,90,120
+# GPU
+GPU_FREQS_PATH := /sys/devices/platform/13000000.mali/devfreq/13000000.mali/available_frequencies
+GPU_MIN_FREQ_PATH := /sys/devices/platform/13000000.mali/devfreq/13000000.mali/min_freq
