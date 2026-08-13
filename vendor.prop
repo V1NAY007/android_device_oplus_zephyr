@@ -316,6 +316,3 @@ persist.sys.phh.mtk_ged_kpi=1
 # Increase max cached processes
 activity_manager.max_cached_processes=64
 
-# ScrollOptimizer
-persist.sys.perf.scroll_opt=true
-persist.sys.perf.scroll_opt.heavy_app=2
