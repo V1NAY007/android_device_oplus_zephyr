@@ -3,7 +3,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-BUILD_BROKEN_DUP_RULES := true
 
 DEVICE_PATH := device/oplus/zephyr
 KERNEL_PATH := $(DEVICE_PATH)-kernel
@@ -122,7 +121,7 @@ BOARD_DTBOIMG_PARTITION_SIZE := 3002368
 BOARD_FLASH_BLOCK_SIZE := $(BOARD_KERNEL_PAGESIZE)
 BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := $(BOARD_BOOTIMAGE_PARTITION_SIZE)
 
--include vendor/lineage/config/BoardConfigReservedSize.mk
+-include vendor/lumine/config/BoardConfigReservedSize.mk
 
 BOARD_SUPER_PARTITION_SIZE := 9126805504
 BOARD_SUPER_PARTITION_GROUPS := oneplus_dynamic_partitions
