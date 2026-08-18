@@ -10,3 +10,7 @@ allow hal_power_default vendor_sysfs_gpu:file rw_file_perms;
 # Display
 allow hal_power_default vendor_proc_display:dir search;
 allow hal_power_default vendor_proc_display:file w_file_perms;
+
+# Oplus-Frame-Boost
+type proc_frame_boost, fs_type, proc_type;
+allow hal_power_default proc_frame_boost:file { read write open getattr };
