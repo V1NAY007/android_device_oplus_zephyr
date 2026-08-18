@@ -37,6 +37,9 @@ genfscon proc /sensor/als_cali       u:object_r:vendor_proc_oplus_als_file:s0
 # Touch
 genfscon proc /shell-temp    u:object_r:vendor_proc_oplus_touch:s0
 
+# Frameboost
+genfscon proc /sys/fbg/frame_boost_enabled u:object_r:proc_frame_boost:s0
+
 # Vibrator
 genfscon sysfs /devices/platform/11282000.i2c/i2c-12/12-005a/leds/vibrator    u:object_r:sysfs_vibrator:s0
 genfscon sysfs /devices/platform/soc/11d04000.i2c/i2c-7/7-005a/leds/vibrator    u:object_r:sysfs_vibrator:s0
