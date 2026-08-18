@@ -313,6 +313,5 @@ zygote.critical_window.minute=10
 #GPU
 persist.sys.phh.mtk_ged_kpi=1
 
-# Increase max cached processes
-activity_manager.max_cached_processes=64
+
 
