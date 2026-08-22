@@ -1,9 +1,16 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
 ## are from OnePlus 10R 5G (CPH2423_15.0.0.1301(EX01).
 
-# AEE
-vendor/lib64/libaedv.so
-vendor/lib64/libladder.so
+# APU
+vendor/lib/libapu_mdw.so
+vendor/lib/libapusys.so
+vendor/lib/libapusys_edma.so
+vendor/lib/vendor.mediatek.hardware.apuware.utils@2.0.so
+vendor/lib64/libapu_mdw.so
+vendor/lib64/libapusys.so
+vendor/lib64/libapusys_edma.so
+vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so
+vendor/lib64/vendor.mediatek.hardware.apuware.xrp@1.0.so
 
 # Audio
 odm/lib64/lib_aurisys_lvimfs.so
