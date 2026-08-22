@@ -365,7 +365,8 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     hostapd \
     libwifi-hal-wrapper \
-    android.hardware.wifi-service
+    android.hardware.wifi-service \
+    wlan_assistant
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.aware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.aware.xml \
