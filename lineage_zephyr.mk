@@ -9,12 +9,12 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_NAME := lineage_zephyr
 PRODUCT_DEVICE := zephyr
-PRODUCT_MANUFACTURER := OPlus
-PRODUCT_BRAND := OPlus
-PRODUCT_MODEL := mt6895
-PRODUCT_SYSTEM_NAME := zephyr
+PRODUCT_MANUFACTURER := realme
+PRODUCT_BRAND := realme
+PRODUCT_MODEL := RMX3563
+PRODUCT_SYSTEM_NAME := RMX3563
 
-PRODUCT_GMS_CLIENTID_BASE := android-oneplus
+PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=OnePlus/PGKM10/OP5565:15/AP3A.240617.008/S.1f56c75-1-a469:user/release-keys \
