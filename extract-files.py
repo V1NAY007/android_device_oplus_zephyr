@@ -71,6 +71,9 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/bin/hw/mtkfusionrild': blob_fixup()
         .add_needed('libutils-v32.so'),
 
+    'vendor/bin/mnld' : blob_fixup()
+        .replace_needed('libmnl.so', 'libmnl_mtk.so'),
+
     (
         'vendor/bin/mnld',
         'vendor/lib64/liboplus_mtkcam_lightsensorprovider.so',
@@ -152,7 +155,7 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .add_needed('libbase_shim.so'),
 
-    'vendor/lib64/mt6895/libmnl.so': blob_fixup()
+    'vendor/lib64/mt6895/libmnl_mtk.so': blob_fixup()
         .add_needed('libcutils.so'),
 
     'vendor/lib64/mt6895/libmtkcam_stdutils.so': blob_fixup()
