@@ -102,6 +102,12 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service': blob_fixup()
         .replace_needed('libutils.so', 'libutils-v32.so'),
 
+    (
+        'vendor/lib64/libcodec2_mtk_venc.so',
+        'vendor/lib64/libcodec2_mtk_vdec.so'
+    ): blob_fixup()
+        .replace_needed('libformatter.so', 'libformatter_mtk.so'),
+
     'vendor/lib64/hw/mt6895/vendor.mediatek.hardware.pq@2.15-impl.so': blob_fixup()
         .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so')
         .binary_regex_replace(
