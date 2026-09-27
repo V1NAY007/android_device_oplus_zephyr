@@ -22,6 +22,7 @@ namespace_imports = [
     'hardware/mediatek',
     'hardware/mediatek/libmtkperf_client',
     'hardware/oplus',
+    'hardware/mediatek/libion_mtk',
 ]
 
 lib_fixups: lib_fixups_user_type = {

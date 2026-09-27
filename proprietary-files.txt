@@ -986,8 +986,6 @@ vendor/lib64/hw/mt6895/android.hardware.graphics.allocator@4.0-impl-mediatek.so;
 vendor/lib64/hw/mt6895/android.hardware.graphics.mapper@4.0-impl-mediatek.so;SYMLINK=vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib64/hw/mt6895/gralloc.common.so;SYMLINK=vendor/lib64/hw/gralloc.common.so
 vendor/lib64/libcomposer_ext.so
-vendor/lib64/libion_mtk.so
-vendor/lib64/libion_ulit.so
 vendor/lib64/libmml.so
 vendor/lib64/libnpagent.so
 vendor/lib64/mt6895/libdpframework.so;SYMLINK=vendor/lib64/libdpframework.so
