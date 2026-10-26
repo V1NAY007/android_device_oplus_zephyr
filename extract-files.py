@@ -47,6 +47,15 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc': blob_fixup()
         .regex_replace('start', 'enable'),
 
+    'vendor/etc/init/camerahalserver.rc': blob_fixup()
+        .regex_replace(
+            r'on post-fs-data\n(?!\s*mkdir /mnt/vendor/persist/camera)',
+            'on post-fs-data\n    mkdir /mnt/vendor/persist/camera 0755 cameraserver cameraserver\n'
+        ),
+
+    'vendor/etc/public.libraries.txt': blob_fixup()
+        .add_line_if_missing('libAlgoProcess.so'),
+
     'system_ext/lib64/libimsma.so': blob_fixup()
         .replace_needed('libsink.so', 'libsink-mtk.so'),
 
