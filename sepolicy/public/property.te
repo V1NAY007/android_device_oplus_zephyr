@@ -1,6 +1,9 @@
 # Audio
 system_public_prop(system_oplus_audio_prop)
 
+# Camera
+vendor_public_prop(vendor_oplus_camera_prop)
+
 # Fingerprint
 vendor_internal_prop(system_fingerprint_prop)
 
