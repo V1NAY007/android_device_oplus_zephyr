@@ -66,6 +66,24 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libstagefright_foundation-v33.so')
         .replace_needed('libavservices_minijail_vendor.so', 'libavservices_minijail.so'),
 
+    'vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy': blob_fixup()
+        .add_line_if_missing('fcntl: 1')
+        .add_line_if_missing('geteuid: 1')
+        .add_line_if_missing('getgid: 1')
+        .add_line_if_missing('getegid: 1')
+        .add_line_if_missing('getgroups: 1')
+        .add_line_if_missing('prlimit64: 1')
+        .add_line_if_missing('faccessat2: 1')
+        .add_line_if_missing('clone3: 1')
+        .add_line_if_missing('rseq: 1')
+        .add_line_if_missing('sendto: 1')
+        .add_line_if_missing('epoll_create1: 1')
+        .add_line_if_missing('epoll_ctl: 1')
+        .add_line_if_missing('epoll_pwait: 1')
+        .add_line_if_missing('timerfd_create: 1')
+        .add_line_if_missing('timerfd_settime: 1')
+        .add_line_if_missing('timerfd_gettime: 1'),
+
     'vendor/bin/hw/android.hardware.security.keymint-service.trustonic': blob_fixup()
         .add_needed('android.hardware.security.rkp-V3-ndk.so')
         .replace_needed('android.hardware.security.keymint-V1-ndk_platform.so', 'android.hardware.security.keymint-V1-ndk.so')
