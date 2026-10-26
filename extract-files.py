@@ -130,6 +130,9 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .replace_needed('libformatter.so', 'libformatter_mtk.so'),
 
+    'vendor/lib64/hw/android.hardware.audio@7.0-impl-mediatek.so': blob_fixup()
+        .replace_needed('android.hardware.audio@7.0-util.so', 'android.hardware.audio@7.0-util-v33.so'),
+
     'vendor/lib64/hw/mt6895/vendor.mediatek.hardware.pq@2.15-impl.so': blob_fixup()
         .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so')
         .binary_regex_replace(
