@@ -1,9 +1,6 @@
 # Audio
 vendor_internal_prop(vendor_audio_tuning_prop)
 
-# Camera
-vendor_internal_prop(vendor_oplus_camera_prop)
-
 # Face
 vendor_internal_prop(vendor_face_prop)
 
