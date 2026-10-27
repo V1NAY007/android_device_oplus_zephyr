@@ -14,6 +14,7 @@ odm/lib64/libnxpsmartpaparser.so
 odm/lib64/libnxpspeech.so
 odm/lib64/liboprec.so;FIX_SONAME
 odm/lib64/libsmartpapmparser.so
+vendor/lib64/hw/android.hardware.audio@7.0-impl-mediatek.so
 vendor/lib64/hw/audio.primary.mediatek.so;SYMLINK=vendor/lib64/hw/audio.primary.mt6895.so
 vendor/lib64/hw/sound_trigger.primary.default.so
 vendor/lib64/libMtkSpeechEnh.so
@@ -436,8 +437,9 @@ vendor/lib64/libbluetooth_mtk_pure.so
 vendor/lib64/libbt-vendor.so
 
 # Bluetooth (A2DP)
-vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
-vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
+vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so
+vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
+vendor/lib64/libbluetooth_audio_session_mediatek.so
 
 # Camera
 odm/etc/camera/CameraHWConfiguration.config
