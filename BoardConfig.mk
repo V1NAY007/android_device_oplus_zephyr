@@ -223,3 +223,4 @@ WIFI_FEATURE_HOSTAPD_11AX := true
 
 # Inherit the proprietary files
 include vendor/oplus/zephyr/BoardConfigVendor.mk
+-include vendor/oplus/camera/BoardConfigVendor.mk
