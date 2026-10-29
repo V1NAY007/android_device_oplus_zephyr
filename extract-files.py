@@ -130,6 +130,26 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libcamera_metadata_shim.so')
         .replace_needed('libutils.so', 'libutils-v32.so'),
 
+    'vendor/lib64/hw/vendor.oplus.hardware.camera_rfi-V1-service-impl.so': blob_fixup()
+        .sig_replace(
+            'fd 7b ba a9 fc 6f 01 a9 fa 67 02 a9 f8 5f 03 a9 f6 57 04 a9 f4 4f 05 a9 fd 03 00 91 ff 03 12 d1 f6 03 01 aa f4 03 00 aa',
+            'c0 03 5f d6',
+        )
+        .sig_replace(
+            'fd 7b ba a9 fc 6f 01 a9 fa 67 02 a9 f8 5f 03 a9 f6 57 04 a9 f4 4f 05 a9 fd 03 00 91 ff 03 12 d1 f5 03 01 aa f4 03 00 aa',
+            'c0 03 5f d6',
+        ),
+
+    'vendor/lib64/mt6895/libmtkcam_hwutils_poweronoffcontroller.so': blob_fixup()
+        .sig_replace(
+            'a4 11 00 94 e1 23 00 91 a6 11 00 94',
+            '1f 20 03 d5 1f 20 03 d5 1f 20 03 d5',
+        )
+        .sig_replace(
+            '13 0c 00 94 e1 03 15 aa 69 0c 00 94',
+            '1f 20 03 d5 1f 20 03 d5 1f 20 03 d5',
+        ),
+
     'vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service': blob_fixup()
         .replace_needed('libutils.so', 'libutils-v32.so'),
 
