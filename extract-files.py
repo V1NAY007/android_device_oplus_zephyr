@@ -150,6 +150,16 @@ blob_fixups: blob_fixups_user_type = {
             '1f 20 03 d5 1f 20 03 d5 1f 20 03 d5',
         ),
 
+    'vendor/lib64/libmtkcam_3rdparty.arc.sateis.custom.so': blob_fixup()
+        .sig_replace(
+            '69 6c 00 94 00 28 00 35',
+            '69 6c 00 94 00 1a 00 35',
+        )
+        .sig_replace(
+            'ff ff 06 a9 ff 3f 00 f9',
+            '90 ff ff 17 1f 20 03 d5',
+        ),
+
     'vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service': blob_fixup()
         .replace_needed('libutils.so', 'libutils-v32.so'),
 
