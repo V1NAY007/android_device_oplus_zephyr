@@ -119,9 +119,27 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/mt6895/libcam.hal3a.so',
         'vendor/lib64/mt6895/libcam.hal3a.ctrl.so',
         'vendor/lib64/mt6895/libmtkcam_request_requlator.so',
-        'vendor/lib64/libcustomer_cameradata.so'
     ): blob_fixup()
         .add_needed('libprocessgroup_shim.so'),
+
+    'vendor/lib64/libcustomer_cameradata.so': blob_fixup()
+        .add_needed('libprocessgroup_shim.so')
+        .sig_replace(
+            'ff c3 01 d1 fd 7b 03 a9 f7 23 00 f9 f6 57 05 a9 f4 4f 06 a9 fd c3 00 91 f5 03 02 2a f3 03 01 2a',
+            'c0 03 5f d6',
+        )
+        .sig_replace(
+            'fd 7b bb a9 fc 0b 00 f9 f8 5f 02 a9 f6 57 03 a9 f4 4f 04 a9 fd 03 00 91 ff 43 13 d1 f3 03 02 2a e0 03 01 2a',
+            'c0 03 5f d6',
+        )
+        .sig_replace(
+            'fd 7b be a9 f3 0b 00 f9 fd 03 00 91 f3 03 01 2a 44 7c 00 94',
+            'c0 03 5f d6',
+        )
+        .sig_replace(
+            'fd 7b bb a9 fc 0b 00 f9 f8 5f 02 a9 f6 57 03 a9 f4 4f 04 a9 fd 03 00 91 ff 43 13 d1 f3 03 01 2a',
+            'c0 03 5f d6',
+        ),
 
     'vendor/lib64/hw/hwcomposer.mtk_common.so': blob_fixup()
         .add_needed('libprocessgroup_shim.so'),
