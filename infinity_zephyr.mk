@@ -5,9 +5,9 @@
 $(call inherit-product, device/oplus/zephyr/device.mk)
 
 # Inherit from the LineageOS configuration.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_zephyr
+PRODUCT_NAME := infinity_zephyr
 PRODUCT_DEVICE := zephyr
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
@@ -21,16 +21,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=$(PRODUCT_SYSTEM_NAME)
 
 
-WITH_GMS := true
-WITH_GMS_COMMS_SUITE := false
-TARGET_USE_WALLPAPERS := true
-TARGET_USE_GPHOTOS := false
-TARGET_USE_FILES := false
-TARGET_USE_MAPS := false
-TARGET_OPTIMIZED_DEXOPT := true
-TARGET_CUSTOM_UDFPS := true
+# Infinity Stuff
+INFINITY_MAINTAINER := "V1NAY007"
+TARGET_HAS_UDFPS := true
+WITH_GAPPS := true
+TARGET_EXCLUDES_AUDIOFX := true
 TARGET_BOOT_ANIMATION_RES := 1080
-USE_REALITY_ENGINE := false
-TARGET_USE_WALLPAPERS := true
-WITH_PIXEL_LAUNCHER := false
-USE_DEFAULT_VULKAN := false
+
