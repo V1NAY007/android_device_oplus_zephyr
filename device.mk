@@ -254,7 +254,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 PRODUCT_PACKAGES += \
-    android.hardware.fastboot-service.example_recovery \
+    android.hardware.fastboot@1.1-impl.custom \
     fastbootd
 
 # Power
