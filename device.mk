@@ -382,3 +382,6 @@ $(call inherit-product, vendor/oplus/zephyr/zephyr-vendor.mk)
 
 #MTK GED GPU
 $(call soong_config_set_bool,libgui,support_mtk_ged_kpi,true)
+
+# OPlus Camera & Gallery
+$(call inherit-product-if-exists, vendor/oplus/camera/opluscamera.mk)
