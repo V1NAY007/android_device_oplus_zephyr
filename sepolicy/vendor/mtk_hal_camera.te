@@ -6,6 +6,7 @@ allow mtk_hal_camera persist_camera_file:file create_file_perms;
 allow mtk_hal_camera persist_data_file:dir search;
 
 allow mtk_hal_camera vendor_proc_oplus_camera:file rw_file_perms;
+allow mtk_hal_camera vendor_proc_oplus_ux_task:file { open write };
 
 r_dir_file(mtk_hal_camera, proc_version)
 r_dir_file(mtk_hal_camera, vendor_proc_oplus_version)

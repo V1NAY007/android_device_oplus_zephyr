@@ -6,6 +6,7 @@ genfscon proc /devinfo/audio_mainboard    u:object_r:vendor_proc_oplus_audio:s0
 
 # Camera
 genfscon proc /cam_kern_fb    u:object_r:vendor_proc_oplus_camera:s0
+genfscon proc /oplus_scheduler/sched_assist/ux_task u:object_r:vendor_proc_oplus_ux_task:s0
 
 # Charging
 genfscon sysfs /class/oplus_chg                                  u:object_r:vendor_sysfs_usb_supply:s0
