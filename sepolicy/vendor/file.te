@@ -7,6 +7,7 @@ type vendor_proc_oplus_audio, fs_type, proc_type;
 # Camera
 type persist_camera_file, file_type;
 type vendor_proc_oplus_camera, fs_type, proc_type;
+type vendor_proc_oplus_ux_task, fs_type, proc_type;
 
 # Charging
 type vendor_sysfs_ac_supply, fs_type, sysfs_type;
