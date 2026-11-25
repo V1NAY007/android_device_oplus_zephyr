@@ -23,7 +23,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 #Axion Stuff
 TARGET_ENABLE_BLUR := true
-TARGET_INCLUDE_AXFX := true
+TARGET_INCLUDE_AXFX := false
 # Camera information (multiple sensors supported)
 AXION_CAMERA_REAR_INFO := 50,8,2
 AXION_CAMERA_FRONT_INFO := 16
