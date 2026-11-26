@@ -20,6 +20,7 @@ allow hal_fingerprint_default persist_data_file:dir search;
 allow hal_fingerprint_default proc:file { read open };
 allow hal_fingerprint_default device:chr_file ioctl;
 allow hal_fingerprint_default vendor_proc_display:file write;
+allow hal_fingerprint_default vendor_proc_fp_tee_bind_core:file w_file_perms;
 
 r_dir_file(hal_fingerprint_default, sysfs_leds)
 rw_dir_file(hal_fingerprint_default, oplus_fingerprint_file)
